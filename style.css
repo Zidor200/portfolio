@@ -1,0 +1,283 @@
+:root{
+    --background--:#FDF3F3;
+    --background2--:hsl(0, 71%, 99%);
+    --grey--:hsl(200, 0%, 85%);
+    --main--:#164947;
+    --faded-main--:hsl(178, 27%, 90%);
+    --complimentry--:#fc5126;
+    --faded-complimentry--:hsl(0, 71%, 97%,.05);
+    --secondary--:#F2F6F6;
+    --black--:#292A46;
+    --faded-black--:hsl(238, 26%, 22%,.5);
+   
+    
+}
+@font-face {
+    font-family: ttcommon;
+    src: url("TT\ Commons\ Regular.otf") format("opentype");
+}
+*{
+    font-family: ttcommon;
+    font-size: 103%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background--);
+  }
+  li{
+      text-decoration: none;
+      list-style-type:none;
+  }
+a,a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.logo{
+    display: flex;
+    gap:.5em;
+    
+}
+.logo h2{
+    color: var(--black--);
+    font-size: 26px;
+}
+.logo .second-name{
+    color: var(--complimentry--);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    color: var(--faded-black--);
+}
+nav ul .active{
+    color: var(--complimentry--);
+}
+nav ul li:hover{
+    color: var(--black--);
+}
+
+.ll{
+    background-color: transparent;
+    overflow: hidden;
+}
+.whatsapp{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    width: 12em;
+    height: 2.5em;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: var(--faded-main--);
+}
+.whatsapp a{
+   display: flex;
+    justify-content: center;
+   align-items: center;
+   gap: .5em;   
+   color: var(--main--); 
+
+}
+.wpL{
+    width: 1.5em;
+}
+.wpIn{
+    fill: var(--background--);
+}
+.wpF{
+    fill: var(--main--);
+}
+section{
+    margin-top: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+section .text{
+    display: grid;
+    margin-right: 8em;
+    
+}
+section .greeting{
+    color: var(--black--);
+    font-weight: 500;
+    font-size: 32px;
+}
+section .quote{
+    margin-top:2ex;
+    color: var(--black--);
+    font-weight: 900;
+    font-size:85px;
+}
+section .dtls{
+    margin-top: 4ex;
+    font-weight: 100;
+    font-size: 18px;
+    width: 7em;
+    align-items: center;   
+}
+section .dtls .vd{
+    background-color: transparent;
+    position: absolute;
+    transform: translateY(50%);
+    color: var(--black--);
+}
+section .dtls svg{
+    fill: var(--main--);
+    float: right;
+}
+section .pict div{
+    position: absolute;
+    background-color: transparent;
+    transform: translateY(-20%);
+}
+section .pict div .svg1 .svg11{
+    position: absolute;
+    color: var(--background--);
+    background-color: transparent;
+    transform: translate(80%,180%);
+}
+.cm{
+    transform: translate(0%,80%);
+    font-size: 26px;
+}
+.ss{
+    fill:var(--background--);
+}
+section .pict div .svg1 .svg11 .div1{
+    transform: translate(-10%,60%);
+}
+section .pict div .svg1 .svg11 .mail{
+    background-color: transparent;
+    transform: translate(180%,-70%);
+    
+}
+section .pict div .svg1 .svg11 .crlc1{
+    background-color: transparent;
+    fill: var(--faded-complimentry--);
+}
+section .pict div .svg1{
+    background-color: transparent;
+    fill: var(--complimentry--);
+    position: absolute;
+    transform: translate(-30%,85%);
+}
+section .pict div img{
+    width: 22em;
+    background-color: transparent;
+}
+section .pict .svg2{
+    fill: var(--main--);
+}
+
+.about-me {
+    background-color: var(--background2--);
+    
+    display: grid;
+}
+.about-me .carrer {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+.infoo:nth-child(2n+1)  {
+        margin-top:30vh ;
+        margin-left: 5vh;
+}
+.infoo:nth-child(2n)  {
+    margin-top:0vh ;
+    margin-left: 5vh;
+}
+.about-me .carrer .infoo .topp{
+    position: absolute;
+    align-items: center;
+    transform: translate(50%,100%);
+}
+.about-me .carrer .infoo .topp .nb{
+    color: var(--complimentry--);
+    font-weight: 900;
+    font-size: 2em;
+    transform: translate(35%,-20%);
+}
+.about-me .carrer .infoo .topp .df{
+    font-size: .8em;
+    font-weight: 500;
+}
+.about-me .carrer .infoo .svg{
+    fill: var(--grey--);
+}
+.about-me .profile{
+    background-color: transparent;
+    width: 100vw;
+    margin-top:10vh;
+    display: flex;
+}
+.about-me .profile .pfclc{
+    margin-left:20vw;
+}
+.about-me .profile .bigc{
+    fill: var(--main--);
+}
+.about-me .profile .bigc span a{
+    position: absolute;
+    transform: translate(250%,250%);
+
+}
+.about-me .profile .smlc span{
+    color: wheat;
+    position: absolute;
+    transform: translate(100%,300%);
+}
+.about-me .profile .smlc{
+    position: absolute;
+    fill: var(--complimentry--);   
+    transform: translateX(-20%);
+}
+.pfP {
+    width: 35em;
+    color: var(--black--);
+    margin-left: 5em ;
+}
+.pfP h2
+{
+    letter-spacing: .02em;
+    font-size:3.2em;
+}
+.pfP p{
+    
+    margin-top: 2em ;
+}
+.cltc{
+    margin-top: 4ex;
+    font-weight: 100;
+    font-size: 18px;
+    width: 5.9em;
+    align-items: center;   
+    position: absolute;
+}
+.cltc .vd{
+    background-color: transparent;
+    position: absolute;
+    transform: translateY(50%);
+    color: var(--black--);
+}
+.clc{
+    fill: var(--complimentry--);
+    float: right;
+}
+.main-work{
+    background-color: var(--main--);
+}
