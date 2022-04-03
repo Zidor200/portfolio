@@ -188,10 +188,18 @@ section .pict .svg2{
 }
 .about-me .carrer {
     width: 100vw;
-    position: relative;
     display: flex;
     margin-top: 10vh;
     margin-left: 10vw;
+}
+.topp{
+    border-radius: 50%;
+    background-color: var(--grey--);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .infoo:nth-child(2n+1)  {
         margin-top:30vh ;
@@ -202,7 +210,6 @@ section .pict .svg2{
     margin-left: 5vh;
 }
 .about-me .carrer .infoo .topp{
-    position: absolute;
     align-items: center;
     transform: translate(50%,100%);
 }
